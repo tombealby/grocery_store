@@ -13,12 +13,12 @@ public class CostCalculatorTest {
 	public void test_calculateCost(){
 		
 		List<String> basket = getBasket();
-		CostCalculator costCalculator = new CostCalculatorSimpleImpl();
+		CostCalculator costCalculator = new CostCalculatorSimpleOffersImpl();
 		int cost = costCalculator.calculateCost(basket);
 		Assert.assertEquals(145, cost);
 
 		basket = getBiggerBasket();
-		costCalculator = new CostCalculatorSimpleImpl();
+		costCalculator = new CostCalculatorSimpleOffersImpl();
 		cost = costCalculator.calculateCost(basket);
 		Assert.assertEquals(220, cost);
 		

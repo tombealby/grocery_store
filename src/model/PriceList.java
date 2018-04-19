@@ -11,7 +11,14 @@ public class PriceList {
 		priceList.put("Apple", 60);
 		priceList.put("Orange", 25);
 		return priceList;
-		
+	}
+
+	public static Map<String, PriceListDetail> getPriceListWithOffers() {
+		//should priceList be a singleton?
+		Map<String, PriceListDetail> priceList = new HashMap<String, PriceListDetail>();
+//		priceList.put("Apple", 60);
+//		priceList.put("Orange", 25);
+		return priceList;
 	}
 
 }
