@@ -1,4 +1,4 @@
-package model;
+package model.discounts;
 
 public class DiscountCalculatorThreeForPriceOfTwoImpl implements DiscountCalculator {
 

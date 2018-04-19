@@ -1,4 +1,4 @@
-package model;
+package model.discounts;
 
 import org.junit.Test;
 

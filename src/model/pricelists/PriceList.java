@@ -1,8 +1,17 @@
-package model;
+package model.pricelists;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import model.discounts.DiscountCalculatorBuyOneGetOneFreeImpl;
+import model.discounts.DiscountCalculatorThreeForPriceOfTwoImpl;
+
+/**
+ * Represents a list for looking up the prices of goods.
+ * @author Tom Bealby
+ * @since 19.04.18
+ *
+ */
 public class PriceList {
 	
 	public static Map<String, Integer> getPriceList() {

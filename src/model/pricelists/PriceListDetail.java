@@ -1,5 +1,16 @@
-package model;
+package model.pricelists;
 
+import model.discounts.DiscountCalculator;
+
+/**
+ * Represents a line in a price list when that price list contains
+ * more information than simple a 'goods item name' -> price mapping.
+ * For example the price list might contain a third column being the
+ * type of discount that applies to the goods item.
+ * @author Tom Bealby
+ * @since 19.04.18
+ *
+ */
 public class PriceListDetail {
 
 	final int price;

@@ -1,4 +1,4 @@
-package model;
+package model.costs;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,16 @@ import junit.framework.Assert;
 public class CostCalculatorTest {
 	
 	@Test
-	public void test_calculateCost(){
+	public void test_calculateCost_no_offers(){
+
+		List<String> basket = getBasket();
+		CostCalculator costCalculator = new CostCalculatorNoOffersImpl();
+		int cost = costCalculator.calculateCost(basket);
+		Assert.assertEquals(205, cost);
+	}
+	
+	@Test
+	public void test_calculateCost_simple_offers(){
 		
 		List<String> basket = getBasket();
 		CostCalculator costCalculator = new CostCalculatorSimpleOffersImpl();

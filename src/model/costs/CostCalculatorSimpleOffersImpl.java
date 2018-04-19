@@ -1,9 +1,20 @@
-package model;
+package model.costs;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import model.discounts.DiscountCalculator;
+import model.pricelists.PriceList;
+import model.pricelists.PriceListDetail;
+
+/**
+ * Calculates the cost of a basket of goods assuming that simple
+ * offers can be applied to those good.
+ * @author Tom Bealby
+ * @since 19.04.18
+ *
+ */
 public class CostCalculatorSimpleOffersImpl implements CostCalculator {
 
 	@Override
